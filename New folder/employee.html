@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management - Employee Portal</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Mobile Navigation Toggle -->
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <label class="sidebar-close" for="nav-toggle">×</label>
+
+        <div class="brand">
+            Employee Portal
+            <small>Employee & HR Management System</small>
+        </div>
+
+        <a class="nav-link" href="dashboard.html">
+            🏠
+            <span>Dashboard</span>
+        </a>
+
+        <a class="nav-link active" href="employees.html">
+            👥
+            <span>Employee Management</span>
+        </a>
+
+        <a class="nav-link" href="attendance.html">
+            🕐
+            <span>My Attendance</span>
+        </a>
+
+        <a class="nav-link" href="leave.html">
+            📝
+            <span>My Leave Management</span>
+        </a>
+
+        <a class="nav-link" href="profile.html">
+            👤
+            <span>My Profile</span>
+        </a>
+
+        <a class="nav-link" href="department.html">
+            🏢
+            <span>My Department</span>
+        </a>
+
+        <a class="nav-link" href="payroll.html">
+            💰
+            <span>My Payroll</span>
+        </a>
+
+        <a class="nav-link" href="announcements.html">
+            📢
+            <span>Announcements</span>
+        </a>
+
+        <a class="nav-link" href="notifications.html">
+            🔔
+            <span>Notifications</span>
+        </a>
+
+        <a class="nav-link logout" href="../index.html">
+            🚪
+            <span>Logout</span>
+        </a>
+
+    </aside>
+
+    <label class="nav-overlay" for="nav-toggle"></label>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <label class="menu-toggle" for="nav-toggle">
+                ☰
+            </label>
+
+            <input
+                class="search"
+                type="text"
+                placeholder="Search employee..."
+            >
+
+            <div class="user">
+
+                <div>
+                    <b>Vikas Kumar</b>
+                    <div class="muted">Software Developer</div>
+                </div>
+
+                <div class="avatar">
+                    VK
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page Content -->
+        <section class="content">
+
+            <div class="page-title">
+
+                <div>
+                    <h2>Employee Management</h2>
+
+                    <div class="muted">
+                        View and manage employee information.
+                    </div>
+                </div>
+
+                <a class="btn btn-primary" href="add-employee.html">
+                    + Add Employee
+                </a>
+
+            </div>
+
+
+            <!-- Employee Statistics -->
+            <div class="grid stats">
+
+                <div class="card">
+
+                    <div class="stat-label">
+                        Total Employees
+                    </div>
+
+                    <div class="stat-value">
+                        24
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="stat-label">
+                        Active Employees
+                    </div>
+
+                    <div class="stat-value">
+                        21
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="stat-label">
+                        Departments
+                    </div>
+
+                    <div class="stat-value">
+                        5
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="stat-label">
+                        New Employees
+                    </div>
+
+                    <div class="stat-value">
+                        3
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Employee Table -->
+            <div class="card table-wrap">
+
+                <h3>Employee List</h3>
+
+                <table class="table">
+
+                    <tr>
+
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>EMP001</td>
+
+                        <td>Rahul Sharma</td>
+
+                        <td>IT</td>
+
+                        <td>Software Developer</td>
+
+                        <td>
+                            <span class="badge success">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                class="btn btn-light"
+                                href="employee-profile.html"
+                            >
+                                View
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>EMP002</td>
+
+                        <td>Priya Mehta</td>
+
+                        <td>HR</td>
+
+                        <td>HR Executive</td>
+
+                        <td>
+                            <span class="badge success">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                class="btn btn-light"
+                                href="employee-profile.html"
+                            >
+                                View
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>EMP003</td>
+
+                        <td>Amit Verma</td>
+
+                        <td>Finance</td>
+
+                        <td>Accountant</td>
+
+                        <td>
+                            <span class="badge success">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                class="btn btn-light"
+                                href="employee-profile.html"
+                            >
+                                View
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>EMP004</td>
+
+                        <td>Pooja Singh</td>
+
+                        <td>Marketing</td>
+
+                        <td>Marketing Executive</td>
+
+                        <td>
+                            <span class="badge warning">
+                                On Leave
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                class="btn btn-light"
+                                href="employee-profile.html"
+                            >
+                                View
+                            </a>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>EMP005</td>
+
+                        <td>Arjun Kumar</td>
+
+                        <td>IT</td>
+
+                        <td>QA Engineer</td>
+
+                        <td>
+                            <span class="badge success">
+                                Active
+                            </span>
+                        </td>
+
+                        <td>
+                            <a
+                                class="btn btn-light"
+                                href="employee-profile.html"
+                            >
+                                View
+                            </a>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
