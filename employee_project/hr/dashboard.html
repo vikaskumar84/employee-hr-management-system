@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard - HR Portal</title>
+    <meta name="theme-color" content="#102a43">
+    <link rel="stylesheet" href="../style.css?v=20260923">
+</head>
+
+<body>
+    <div class="layout"><input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+        <aside class="sidebar"><label class="sidebar-close" for="nav-toggle" aria-label="Close navigation">×</label>
+            <div class="brand">HR Portal<small>Employee & HR Management System</small></div><a class="nav-link active"
+                href="dashboard.html">🏠<span>Dashboard</span></a><a class="nav-link "
+                href="attendance.html">🕐<span>Attendance Management</span></a><a class="nav-link "
+                href="leave.html">📝<span>Leave Management</span></a><a class="nav-link "
+                href="profile.html">👤<span>Employee Profile</span></a><a class="nav-link "
+                href="department.html">🏢<span>Department</span></a><a class="nav-link "
+                href="payroll.html">💰<span>Payroll</span></a><a class="nav-link "
+                href="announcements.html">📢<span>Announcements</span></a><a class="nav-link "
+                href="add-employee.html">➕<span>Add Employee</span></a><a class="nav-link logout"
+                href="login.html">🚪<span>Logout</span></a>
+        </aside><label class="nav-overlay" for="nav-toggle" aria-label="Close navigation"></label>
+        <main class="main">
+            <header class="topbar"><label class="menu-toggle" for="nav-toggle" aria-label="Open navigation">☰</label>
+                <div class="user">
+                    <div><b>HR Admin</b>
+                        <div class="muted">HR Manager</div>
+                    </div>
+                    <div class="avatar hr-avatar" aria-label="HR Admin avatar">👨‍💼</div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="hello">
+                    <h1>Good Morning, HR Admin 👋</h1>
+                    <div class="muted">Here's what's happening today</div>
+                </div>
+                <div class="grid stats">
+                    <div class="card">
+                        <div class="stat-label">Total Employees</div>
+                        <div class="stat-value">124</div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-label">Present Today</div>
+                        <div class="stat-value">102</div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-label">On Leave</div>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="card">
+                        <div class="stat-label">Departments</div>
+                        <div class="stat-value">8</div>
+                    </div>
+                </div>
+                <div class="grid two">
+                    <div class="card">
+                        <h3>Attendance Overview</h3>
+                        <table class="table">
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Present</th>
+                                <th scope="col">Absent</th>
+                            </tr>
+                            <tr>
+                                <td>Mon</td>
+                                <td>108</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Tue</td>
+                                <td>114</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Wed</td>
+                                <td>109</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Thu</td>
+                                <td>116</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Fri</td>
+                                <td>102</td>
+                                <td>22</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card">
+                        <h3>Recent Leave Requests</h3>
+                        <table class="table fit-table leave-table">
+                            <tr>
+                                <th scope="col">Employee</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                            <tr>
+                                <td>Rahul Sharma</td>
+                                <td>Casual Leave</td>
+                                <td><span class="badge warning">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Pooja Mehta</td>
+                                <td>Sick Leave</td>
+                                <td><span class="badge success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td>Amit Verma</td>
+                                <td>Earned Leave</td>
+                                <td><span class="badge warning">Pending</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card" style="margin-top:18px">
+                    <h3>Quick Actions</h3><a class="btn btn-primary" href="profile.html">Manage Employees</a> <a
+                        class="btn btn-light" href="leave.html">Review Leaves</a> <a class="btn btn-light"
+                        href="announcements.html">Post Announcement</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
