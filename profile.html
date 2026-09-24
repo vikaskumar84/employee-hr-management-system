@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Profile - HR Portal</title><meta name="theme-color" content="#102a43"><link rel="stylesheet" href="../style.css?v=20260922"></head><body>
+<div class="layout"><input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation"><aside class="sidebar"><label class="sidebar-close" for="nav-toggle" aria-label="Close navigation">×</label><div class="brand">HR Portal<small>Employee & HR Management System</small></div><a class="nav-link " href="dashboard.html">🏠<span>Dashboard</span></a><a class="nav-link " href="attendance.html">🕐<span>Attendance Management</span></a><a class="nav-link " href="leave.html">📝<span>Leave Management</span></a><a class="nav-link active" href="profile.html">👤<span>Employee Profile</span></a><a class="nav-link " href="department.html">🏢<span>Department</span></a><a class="nav-link " href="payroll.html">💰<span>Payroll</span></a><a class="nav-link " href="announcements.html">📢<span>Announcements</span></a><a class="nav-link logout" href="../index.html">🚪<span>Logout</span></a></aside><label class="nav-overlay" for="nav-toggle" aria-label="Close navigation"></label>
+<main class="main"><header class="topbar"><label class="menu-toggle" for="nav-toggle" aria-label="Open navigation">☰</label><input class="search" placeholder="Search here..."><div class="user"><div><b>HR Admin</b><div class="muted">HR Manager</div></div><div class="avatar">HR</div></div></header><section class="content"><div class="page-title"><h2>Employee Profile</h2><div class="muted">View and manage employee records.</div></div><div class="employee-profile-module">
+<input class="employee-choice" type="radio" name="employee" id="emp-vikas" checked>
+<input class="employee-choice" type="radio" name="employee" id="emp-rahul">
+<input class="employee-choice" type="radio" name="employee" id="emp-pooja">
+<input class="employee-choice" type="radio" name="employee" id="emp-amit">
+
+<div class="card employee-list-card">
+  <div class="selection-heading"><div><h3>Employee Directory</h3><p class="muted">Select an employee to view the complete record.</p></div><span class="selection-hint">CSS-only selection · No JavaScript</span></div>
+  <div class="employee-selector" role="radiogroup" aria-label="Select employee">
+    <label class="employee-option" for="emp-vikas"><span class="mini-avatar">VK</span><span><strong>Vikas Kumar</strong><small>Software Developer · Computer Science</small></span><span class="badge success">Active</span></label>
+    <label class="employee-option" for="emp-rahul"><span class="mini-avatar teal">RS</span><span><strong>Rahul Sharma</strong><small>Engineering Manager · Engineering</small></span><span class="badge success">Active</span></label>
+    <label class="employee-option" for="emp-pooja"><span class="mini-avatar violet">PM</span><span><strong>Pooja Mehta</strong><small>UI/UX Designer · Design</small></span><span class="badge success">Active</span></label>
+    <label class="employee-option" for="emp-amit"><span class="mini-avatar amber">AV</span><span><strong>Amit Verma</strong><small>QA Engineer · Computer Science</small></span><span class="badge success">Active</span></label>
+  </div>
+</div>
+
+<div class="employee-details">
+  <article class="card employee-panel details-vikas">
+    <div class="selected-heading"><div><span class="eyebrow-label">SELECTED EMPLOYEE</span><h3>Vikas Kumar</h3><p class="muted">Software Developer · Computer Science</p></div><span class="badge success">Active</span></div>
+    <div class="detail-grid">
+      <div class="detail-item"><span>Employee ID</span><strong>VK-1025</strong></div><div class="detail-item"><span>Work Email</span><strong>yvikas2006@gmail.com</strong></div>
+      <div class="detail-item"><span>Phone</span><strong>+91 8445703620</strong></div><div class="detail-item"><span>Location</span><strong>Mathura</strong></div>
+      <div class="detail-item"><span>Department</span><strong>Computer Science</strong></div><div class="detail-item"><span>Manager</span><strong>Rahul Sharma</strong></div>
+      <div class="detail-item"><span>Project</span><strong>Employee Portal Revamp</strong></div><div class="detail-item"><span>Employment Type</span><strong>Full Time</strong></div>
+      <div class="detail-item"><span>Joining Date</span><strong>15 Jul 2025</strong></div><div class="detail-item"><span>Shift</span><strong>09:00 AM – 06:00 PM</strong></div>
+    </div>
+    <div class="detail-section"><h4>Current Responsibilities</h4><p class="muted">Frontend development, UI maintenance, responsive interface improvements and internal portal feature delivery.</p></div>
+  </article>
+
+  <article class="card employee-panel details-rahul">
+    <div class="selected-heading"><div><span class="eyebrow-label">SELECTED EMPLOYEE</span><h3>Rahul Sharma</h3><p class="muted">Engineering Manager · Engineering</p></div><span class="badge success">Active</span></div>
+    <div class="detail-grid">
+      <div class="detail-item"><span>Employee ID</span><strong>EMP1008</strong></div><div class="detail-item"><span>Work Email</span><strong>rahul.sharma@company.com</strong></div>
+      <div class="detail-item"><span>Phone</span><strong>+91 9876543210</strong></div><div class="detail-item"><span>Location</span><strong>Mathura</strong></div>
+      <div class="detail-item"><span>Department</span><strong>Engineering</strong></div><div class="detail-item"><span>Manager</span><strong>Neha Singh</strong></div>
+      <div class="detail-item"><span>Project</span><strong>Platform Engineering</strong></div><div class="detail-item"><span>Employment Type</span><strong>Full Time</strong></div>
+      <div class="detail-item"><span>Joining Date</span><strong>10 Mar 2022</strong></div><div class="detail-item"><span>Shift</span><strong>09:00 AM – 06:00 PM</strong></div>
+    </div>
+    <div class="detail-section"><h4>Current Responsibilities</h4><p class="muted">Engineering planning, team coordination, delivery reviews, technical guidance and project execution.</p></div>
+  </article>
+
+  <article class="card employee-panel details-pooja">
+    <div class="selected-heading"><div><span class="eyebrow-label">SELECTED EMPLOYEE</span><h3>Pooja Mehta</h3><p class="muted">UI/UX Designer · Design</p></div><span class="badge success">Active</span></div>
+    <div class="detail-grid">
+      <div class="detail-item"><span>Employee ID</span><strong>EMP1012</strong></div><div class="detail-item"><span>Work Email</span><strong>pooja.mehta@company.com</strong></div>
+      <div class="detail-item"><span>Phone</span><strong>+91 9123456780</strong></div><div class="detail-item"><span>Location</span><strong>Mathura</strong></div>
+      <div class="detail-item"><span>Department</span><strong>Design</strong></div><div class="detail-item"><span>Manager</span><strong>Priya Kapoor</strong></div>
+      <div class="detail-item"><span>Project</span><strong>Mobile Experience 2.0</strong></div><div class="detail-item"><span>Employment Type</span><strong>Full Time</strong></div>
+      <div class="detail-item"><span>Joining Date</span><strong>18 Aug 2023</strong></div><div class="detail-item"><span>Shift</span><strong>09:30 AM – 06:30 PM</strong></div>
+    </div>
+    <div class="detail-section"><h4>Current Responsibilities</h4><p class="muted">Interface design, design systems, usability reviews, prototypes and collaboration with engineering teams.</p></div>
+  </article>
+
+  <article class="card employee-panel details-amit">
+    <div class="selected-heading"><div><span class="eyebrow-label">SELECTED EMPLOYEE</span><h3>Amit Verma</h3><p class="muted">QA Engineer · Computer Science</p></div><span class="badge success">Active</span></div>
+    <div class="detail-grid">
+      <div class="detail-item"><span>Employee ID</span><strong>EMP1017</strong></div><div class="detail-item"><span>Work Email</span><strong>amit.verma@company.com</strong></div>
+      <div class="detail-item"><span>Phone</span><strong>+91 9988776655</strong></div><div class="detail-item"><span>Location</span><strong>Mathura</strong></div>
+      <div class="detail-item"><span>Department</span><strong>Computer Science</strong></div><div class="detail-item"><span>Manager</span><strong>Rahul Sharma</strong></div>
+      <div class="detail-item"><span>Project</span><strong>Quality Automation Suite</strong></div><div class="detail-item"><span>Employment Type</span><strong>Full Time</strong></div>
+      <div class="detail-item"><span>Joining Date</span><strong>06 Jan 2024</strong></div><div class="detail-item"><span>Shift</span><strong>09:00 AM – 06:00 PM</strong></div>
+    </div>
+    <div class="detail-section"><h4>Current Responsibilities</h4><p class="muted">Test planning, regression testing, automation coverage, defect tracking and release quality checks.</p></div>
+  </article>
+</div>
+</div></section></main></div></body></html>
