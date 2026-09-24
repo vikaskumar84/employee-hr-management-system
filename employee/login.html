@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee & HR Login System</title>
+  <meta name="description" content="Secure employee and HR portal login for the Employee and HR Management System.">
+  <meta name="theme-color" content="#3b82f6">
+  <link rel="stylesheet" href="../style.css?v=20260923">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-shell" aria-label="Employee and HR Login System">
+      <div class="login-panel">
+        <div class="login-brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span class="brand-orbit"></span>
+            <span class="brand-core">HR</span>
+          </div>
+          <div>
+            <div class="brand-name">HRMS</div>
+            <div class="brand-subtitle">Employee &amp; HR Login System</div>
+          </div>
+        </div>
+
+        <div class="login-heading">
+          <p class="eyebrow">WELCOME BACK</p>
+          <h1>Employee &amp; HR Login System</h1>
+          <p>Sign in to access your personalized portal.</p>
+        </div>
+
+        <div class="login-tabs" role="tablist" aria-label="Login type">
+          <input class="role-input" type="radio" name="login-role" id="employee-role" checked>
+          <input class="role-input" type="radio" name="login-role" id="hr-role">
+          <label class="role-tab employee-tab" for="employee-role" role="tab">Employee</label>
+          <label class="role-tab hr-tab" for="hr-role" role="tab">HR</label>
+          <span class="tab-indicator" aria-hidden="true"></span>
+        </div>
+
+        <div class="login-forms">
+          <form class="login-form-card employee-form" aria-label="Employee login">
+            <div class="field">
+              <label for="employee-email">Email Address</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">@</span>
+                <input id="employee-email" type="email" value="yvikas2006@gmail.com" required autocomplete="username" placeholder="Enter your email">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="employee-password">Password</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">●</span>
+                <input id="employee-password" type="password" value="password" required autocomplete="current-password" placeholder="Enter your password">
+                <span class="password-hint" aria-hidden="true">•••</span>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember"><input type="checkbox"> <span>Keep me logged in</span></label>
+              <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+
+            <a class="login-submit employee-submit" href="../employee/dashboard.html" aria-label="Sign in as Employee">Sign In</a>
+          </form>
+
+          <form class="login-form-card hr-form" aria-label="HR login">
+            <div class="field">
+              <label for="hr-email">Email Address</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">@</span>
+                <input id="hr-email" type="email" value="hr.admin@company.com" required autocomplete="username" placeholder="Enter your email">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="hr-password">Password</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">●</span>
+                <input id="hr-password" type="password" value="password" required autocomplete="current-password" placeholder="Enter your password">
+                <span class="password-hint" aria-hidden="true">•••</span>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember"><input type="checkbox"> <span>Keep me logged in</span></label>
+              <a href="#" class="forgot-link">Forgot Password?</a>
+            </div>
+
+            <a class="login-submit hr-submit" href="../hr/dashboard.html" aria-label="Sign in as HR">Sign In</a>
+          </form>
+        </div>
+
+        <p class="login-footer">Secure access to your workplace portal</p>
+      </div>
+
+      <aside class="login-visual" aria-label="Workplace illustration">
+        <div class="visual-content">
+          <div class="visual-badge">HRMS PORTAL</div>
+          <h2>Manage work.<br><span>Stay connected.</span></h2>
+          <p>One simple platform for employees and HR teams to manage everyday workplace activities.</p>
+
+          <div class="illustration" aria-hidden="true">
+            <div class="bubble bubble-clock"><span>◷</span></div>
+            <div class="bubble bubble-user"><span>●</span></div>
+            <div class="bubble bubble-tools"><span>⚙</span></div>
+            <div class="bubble bubble-chat"><span>☰</span></div>
+            <div class="plant plant-left"><i></i><i></i><i></i><b></b></div>
+            <div class="plant plant-right"><i></i><i></i><i></i><b></b></div>
+            <div class="person">
+              <div class="hair"></div>
+              <div class="face"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="smile"></span></div>
+              <div class="neck"></div>
+              <div class="shirt"></div>
+              <div class="arm arm-left"></div>
+              <div class="arm arm-right"></div>
+            </div>
+            <div class="laptop">
+              <div class="screen"><div class="screen-line"></div><div class="screen-line short"></div><div class="screen-dot"></div></div>
+              <div class="keyboard"></div>
+              <div class="base"></div>
+            </div>
+            <div class="desk"></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
